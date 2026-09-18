@@ -1,0 +1,183 @@
+/* resume section */
+#resume_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: auto;
+    margin: 100px 0px;
+    padding: 0px 245px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    margin: 100px 20px;
+    box-shadow: 0 0 20px rgba(52, 183, 167, 0.3);
+}
+
+#resume_section>h1 {
+    margin: 10px 0px;
+    font-size: 30px;
+    border-bottom: 3px solid #34b7a7;
+    padding: 10px 0px;
+    font-family: "Raleway", sans-serif;
+    text-align: left;
+    color: #ffffff;
+}
+
+.education_section {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.heading {
+    margin: 30px 0px;
+    font-size: 30px;
+    font-family: "Raleway", sans-serif;
+    text-align: left;
+    color: #ffffff;
+}
+
+.edu-details-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12); */
+    padding: 10px 30px;
+    font-family: "Raleway", sans-serif;
+    margin: 20px 0px;
+    height: 280px;
+    border: 1px solid #34b7a7;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: #ffffff;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(52, 183, 167, 0.4);
+}
+
+.edu-details-box:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 0 25px rgba(52, 183, 167, 0.6);
+}
+
+.uni-details {
+    width: 50%;
+}
+
+.description {
+    width: 50%;
+}
+
+.uni-details h1 {
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.uni-details h1 i {
+    color: rgb(23, 148, 23);
+}
+
+.uni-details h2 {
+    font-size: 20px;
+    /* color: #444444; */
+    font-style: italic;
+    font-weight: normal;
+    font-family: "Raleway", sans-serif;
+    color: #ffffff;
+}
+
+.uni-details a,
+.uni-details h3 {
+    text-decoration: none;
+    font-size: 14px;
+    /* color: #34b7a7; */
+    font-style: italic;
+    font-weight: normal;
+    font-family: "Raleway", sans-serif;
+    color: #ffffff;
+}
+
+.uni-details a:hover {
+    text-decoration: underline;
+}
+
+.uni-details a i,
+.uni-details h3 i {
+    color: red;
+}
+
+.uni-details i {
+    font-size: 15px;
+    padding: 0px 10px;
+}
+
+.description h1 {
+    font-size: 17px;
+    line-height: 27px;
+    font-style: italic;
+    font-weight: normal;
+    color: #bebebe;
+}
+
+/* Language and skills sections */
+
+.language-skill-same-class {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.language-skill-same-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+    padding: 10px 30px;
+    font-family: "Raleway", sans-serif;
+    margin: 20px 0px;
+    height: 280px;
+    flex-wrap: wrap;
+    border: 1px solid #34b7a7;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 15px rgba(52, 183, 167, 0.4);
+    transition: all 0.3s ease;
+}
+
+.language-skill-same-container:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 0 25px rgba(52, 183, 167, 0.6);
+}
+
+.bullet {
+    width: 13px;
+    height: 13px;
+    background: #34b7a7;
+    margin: 0;
+    margin-right: 18px;
+}
+
+.language-skill-same-container h1 {
+    display: flex;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0px 20px;
+    width: 50%;
+    align-items: center;
+    font-family: "Raleway", sans-serif;
+    color: #ffffff;
+}
+
+.language_container h1 {
+    width: 100%;
+    color: #ffffff;
+}
+
+/* Footer section */

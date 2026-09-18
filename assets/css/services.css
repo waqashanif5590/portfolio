@@ -1,0 +1,99 @@
+/* services section */
+#service_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: auto;
+    margin: 100px 0px;
+    padding: 0px 130px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    margin: 100px 20px;
+    box-shadow: 0 0 20px rgba(52, 183, 167, 0.3);
+}
+
+#service_section>h1 {
+    margin: 10px 0px;
+    font-size: 30px;
+    border-bottom: 3px solid #34b7a7;
+    padding: 10px 0px;
+    font-family: "Raleway", sans-serif;
+    text-align: left;
+    color: #ffffff;
+}
+
+#service_section>p {
+    margin: 10px 0px;
+    font-size: 18px;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    font-weight: 500;
+    line-height: 31px;
+    color: #ffffff;
+}
+
+/* Services container */
+.services_container {
+    display: grid;
+    /* 3 cards in a row with auto width */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    margin: 30px 0px;
+
+}
+
+.service {
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    border: 1px solid #34b7a7;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 15px rgba(52, 183, 167, 0.4);
+    transition: all 0.3s ease;
+}
+
+.service:hover {
+    background: rgba(52, 183, 167, 0.2);
+    /* backdrop-filter: blur(15px); */
+    /* box-shadow: 0 0 25px rgba(52, 183, 167, 0.6); */
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.service:hover .child {
+    color: #ffffff;
+}
+
+.service h1 {
+    margin: 10px 0px;
+    font-size: 20px;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    color: #ffffff;
+}
+
+.service p {
+    margin: 10px 0px;
+    font-size: 14px;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    line-height: 24px;
+    color: #ffffff
+}
+
+.service img {
+    width: 190px;
+    height: 170px;
+    /* border-radius: 50%; */
+}
+
+/* Footer section */

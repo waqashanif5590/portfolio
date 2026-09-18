@@ -1,0 +1,224 @@
+ .project-details-page {
+    max-width: 1180px;
+    margin: 6rem auto;
+    padding: 0 2rem 5rem;
+    color: var(--text, #f4f8f7);
+    font-family: 'Manrope', sans-serif;
+}
+
+.project-back-link,
+.project-eyebrow {
+    color: var(--accent, #55d3bf);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.project-back-link {
+    display: inline-block;
+    margin-bottom: 3rem;
+    text-decoration: none;
+}
+
+.project-back-link:hover {
+    color: #9aeee2;
+}
+
+.project-details-header {
+    max-width: 850px;
+    margin-bottom: 2.5rem;
+}
+
+.project-details-header h1 {
+    margin: 0.7rem 0 1rem;
+    color: var(--text, #f4f8f7);
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(2.4rem, 6vw, 5.4rem);
+    line-height: 1;
+}
+
+.project-lead,
+.project-description,
+.feature-card p {
+    color: var(--text-soft, #b7c8c5);
+    line-height: 1.8;
+}
+
+.project-lead {
+    max-width: 680px;
+    font-size: 1.15rem;
+}
+
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 1.8rem;
+}
+
+.project-action {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    border: 1px solid var(--line, rgba(85, 211, 191, 0.4));
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    color: var(--text, #f4f8f7);
+    text-decoration: none;
+    transition: 180ms ease;
+}
+
+.project-action:hover,
+.project-action-primary {
+    border-color: var(--accent, #55d3bf);
+    background: var(--accent, #55d3bf);
+    color: #07111f;
+}
+
+.project-hero-image {
+    margin: 0 0 4rem;
+}
+
+.project-hero-image img {
+    display: block;
+    width: 100%;
+    max-height: 620px;
+    border-radius: 0.85rem;
+    object-fit: cover;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.25);
+}
+
+.project-hero-image figcaption,
+.project-gallery figcaption {
+    margin-top: 0.65rem;
+    color: var(--text-soft, #b7c8c5);
+    font-size: 0.85rem;
+}
+
+.project-details-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.7fr) minmax(250px, 0.8fr);
+    gap: 4rem;
+    align-items: start;
+}
+
+.project-copy h2,
+.project-panel h2,
+.project-section h2 {
+    margin: 0.55rem 0 1.15rem;
+    color: var(--text, #f4f8f7);
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.8rem;
+}
+
+.project-description {
+    font-size: 1.05rem;
+    white-space: normal;
+}
+
+.project-panel {
+    border-left: 1px solid var(--line, rgba(85, 211, 191, 0.4));
+    padding-left: 2rem;
+}
+
+.technology-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    padding: 0;
+    list-style: none;
+}
+
+.technology-list li {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid var(--line, rgba(85, 211, 191, 0.4));
+    border-radius: 99px;
+    padding: 0.55rem 0.8rem;
+    color: var(--text-soft, #b7c8c5);
+    font-size: 0.9rem;
+}
+
+.technology-list i,
+.feature-icon {
+    color: var(--accent, #55d3bf);
+}
+
+.project-section {
+    margin-top: 5rem;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.feature-card {
+    border: 1px solid var(--line, rgba(85, 211, 191, 0.4));
+    border-radius: 0.75rem;
+    padding: 1.4rem;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.feature-card h3 {
+    margin: 0.8rem 0 0.5rem;
+    color: var(--text, #f4f8f7);
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.feature-card p {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.feature-icon {
+    font-size: 1.3rem;
+}
+
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+}
+
+.project-gallery figure {
+    margin: 0;
+}
+
+.project-gallery img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    border-radius: 0.7rem;
+    object-fit: cover;
+}
+
+.project-not-found {
+    min-height: 50vh;
+}
+
+@media (max-width: 700px) {
+    .project-details-page {
+        margin: 3rem auto;
+        padding: 0 1rem 3rem;
+    }
+
+    .project-details-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .project-panel {
+        border-top: 1px solid var(--line, rgba(85, 211, 191, 0.4));
+        border-left: 0;
+        padding-top: 2rem;
+        padding-left: 0;
+    }
+
+    .project-hero-image {
+        margin-bottom: 3rem;
+    }
+}
