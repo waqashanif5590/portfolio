@@ -10,11 +10,11 @@ require_once __DIR__ . '/database/database.php';
 <section id="landing_section">
     <div class="landing_content">
         <h1 data-aos="fade-up">Welcome to my Portfolio</h1>
-        <p data-aos="fade-up" data-aos-delay="500">I'm Muhammad Waqas Hanif and I'm a professional Full Stack
+        <p data-aos="fade-up" data-aos-delay="0">I'm Muhammad Waqas Hanif and I'm a professional Full Stack
             Developer from Pakistan.</p>
         <div class="learn-more">
-            <p data-aos="fade-up" data-aos-delay="1000">Click to Learn more</p>
-            <a data-aos="fade-down" data-aos-delay="1000" href="/portfolio/pages/php/about.php">About Me</a>
+            <p data-aos="fade-up" data-aos-delay="0">Click to Learn more</p>
+            <a data-aos="fade-down" data-aos-delay="0" href="/portfolio/pages/php/about.php">About Me</a>
         </div>
 
     </div>
@@ -24,7 +24,7 @@ require_once __DIR__ . '/database/database.php';
 <!-- about section -->
 <section id="about_section">
     <h1 data-aos="fade-up">About Me</h1>
-    <p data-aos="fade-up" data-aos-delay="500">I'm Muhammad Waqas Hanif, a professional Full Stack Developer from
+    <p data-aos="fade-up" data-aos-delay="0">I'm Muhammad Waqas Hanif, a professional Full Stack Developer from
         Pakistan.</p>
 
     <div class="details">
@@ -33,26 +33,26 @@ require_once __DIR__ . '/database/database.php';
         </div>
 
         <div class="details_container">
-            <h1 data-aos="fade-up">UI/UX and Full Stack Developer</h1>
-            <p data-aos="fade-down" data-aos-delay="500">I specialize in creating user-friendly and visually
+            <h1 data-aos="fade-up">PHP and Laravel Full Stack Developer</h1>
+            <p data-aos="fade-down" data-aos-delay="0">I specialize in creating user-friendly and visually
                 appealing interfaces for mobiles and web
                 applications while also being proficient
                 in backend development.</p>
             <div class="personal_details">
                 <div class="part_1 details_same">
                     <p data-aos="fade-up" data-aos-delay="0"><strong>Name:</strong> Muhammad Waqas Hanif</p>
-                    <p data-aos="fade-up" data-aos-delay="200"><strong>Email:</strong> waqas@example.com</p>
-                    <p data-aos="fade-up" data-aos-delay="400"><strong>Phone:</strong> +92 300 1234567</p>
-                    <p data-aos="fade-up" data-aos-delay="600"><strong>Website:</strong> www.example.com</p>
-                    <p data-aos="fade-up" data-aos-delay="800"><strong>Freelance:</strong> Available</p>
+                    <p data-aos="fade-up" data-aos-delay="0"><strong>Email:</strong> waqashanif5590@gmail.com</p>
+                    <p data-aos="fade-up" data-aos-delay="0"><strong>Phone:</strong> +92 3485990122</p>
+                    <p data-aos="fade-up" data-aos-delay="0"><strong>Website:</strong> www.example.com</p>
+                    <p data-aos="fade-up" data-aos-delay="0"><strong>Freelance:</strong> Available</p>
                 </div>
                 <div class="part_2 details_same">
-                    <p data-aos="fade-up" data-aos-delay="0"><strong>Age:</strong> 30</p>
-                    <p data-aos="fade-up" data-aos-delay="200"><strong>Education:</strong> BS in Computer Science
+                    <p data-aos="fade-up" data-aos-delay="0"><strong>Age:</strong> 22</p>
+                    <p data-aos="fade-up" data-aos-delay="0"><strong>Education:</strong> BS in Computer Science
                     </p>
-                    <p data-aos="fade-up" data-aos-delay="400"><strong>Experience:</strong> 5 years</p>
-                    <p data-aos="fade-up" data-aos-delay="600"><strong>Location:</strong> Pakistan</p>
-                    <p data-aos="fade-up" data-aos-delay="800"><strong>City:</strong> Lahore</p>
+                    <p data-aos="fade-up" data-aos-delay="0"><strong>Experience:</strong> 5 years</p>
+                    <p data-aos="fade-up" data-aos-delay="0"><strong>Location:</strong> Pakistan</p>
+                    <p data-aos="fade-up" data-aos-delay="0"><strong>City:</strong> Lahore</p>
                 </div>
 
 
@@ -64,7 +64,7 @@ require_once __DIR__ . '/database/database.php';
 <!-- Skills section -->
 <section id="skills_section">
     <h1 data-aos="fade-up">Skills</h1>
-    <p data-aos="fade-up" data-aos-delay="300">I specialize in building modern, full-stack web applications using
+    <p data-aos="fade-up" data-aos-delay="0">I specialize in building modern, full-stack web applications using
         technologies like HTML, CSS, JavaScript,
         React, Node.js, and MongoDB. From creating responsive user interfaces to developing powerful back-end APIs,
         I enjoy crafting efficient and scalable solutions that solve real-world problems.</p>
@@ -137,49 +137,49 @@ require_once __DIR__ . '/database/database.php';
 <div id="service_section">
     <h1 data-aos="fade-up">Services</h1>
     <!-- Services as a web developer -->
-    <p data-aos="fade-up" data-aos-delay="300">We provide web development services including HTML, CSS, JavaScript, PHP, Laravel, Mysql
+    <p data-aos="fade-up" data-aos-delay="0">We provide web development services including HTML, CSS, JavaScript, PHP, Laravel, Mysql
         and more.</p>
     <div class="services_container">
         <div class="service">
             <!-- take image online that is related to the service -->
             <img data-aos="zoom-in" src="/portfolio/public/images/blog.jpg" alt="Web Development">
             <h1 data-aos="fade-up" class="child">Blogg Websites</h1>
-            <p data-aos="fade-up" data-aos-delay="300" class="child">Blog websites for sharing knowledge and experiences.</p>
+            <p data-aos="fade-up" data-aos-delay="0" class="child">Blog websites for sharing knowledge and experiences.</p>
         </div>
         <div class="service">
             <img data-aos="zoom-in" src="/portfolio/public/images/business.jpg" alt="Web Development">
             <h1 data-aos="fade-up" class="child">Business Websites</h1>
-            <p data-aos="fade-up" data-aos-delay="300" class="child">Professional websites for businesses to showcase their products and services.</p>
+            <p data-aos="fade-up" data-aos-delay="0" class="child">Professional websites for businesses to showcase their products and services.</p>
         </div>
         <div class="service">
             <img data-aos="zoom-in" src="/portfolio/public/images/gym.jpg" alt="Web Development">
             <h1 data-aos="fade-up" class="child">Gym/Fitness Club Websites</h1>
-            <p data-aos="fade-up" data-aos-delay="300" class="child">Websites for fitness centers and gyms to attract new members and promote their services.</p>
+            <p data-aos="fade-up" data-aos-delay="0" class="child">Websites for fitness centers and gyms to attract new members and promote their services.</p>
         </div>
         <div class="service">
             <img data-aos="zoom-in" src="/portfolio/public/images/lms.jpg" alt="Web Development">
             <h1 data-aos="fade-up" class="child">LMS Portals</h1>
-            <p data-aos="fade-up" data-aos-delay="300" class="child">Learning management systems for educational institutions and training programs.</p>
+            <p data-aos="fade-up" data-aos-delay="0" class="child">Learning management systems for educational institutions and training programs.</p>
         </div>
         <div class="service">
             <img data-aos="zoom-in" src="/portfolio/public/images/portfolio_temple.jpg" alt="Web Development">
             <h1 data-aos="fade-up" class="child">Portfolio Websites</h1>
-            <p data-aos="fade-up" data-aos-delay="300" class="child">Showcase your work and skills with a professional portfolio website.</p>
+            <p data-aos="fade-up" data-aos-delay="0" class="child">Showcase your work and skills with a professional portfolio website.</p>
         </div>
         <div class="service">
             <img data-aos="zoom-in" src="/portfolio/public/images/ecommerce.jpg" alt="Web Development">
             <h1 data-aos="fade-up" class="child">E-Commerce Websites</h1>
-            <p data-aos="fade-up" data-aos-delay="300" class="child">Online stores for selling products and services to customers.</p>
+            <p data-aos="fade-up" data-aos-delay="0" class="child">Online stores for selling products and services to customers.</p>
         </div>
         <div class="service">
             <img data-aos="zoom-in" src="/portfolio/public/images/resturent.jpg" alt="Web Development">
             <h1 data-aos="fade-up" class="child">Restaurant Websites</h1>
-            <p data-aos="fade-up" data-aos-delay="300" class="child">Websites for restaurants to showcase their menu, location, and services.</p>
+            <p data-aos="fade-up" data-aos-delay="0" class="child">Websites for restaurants to showcase their menu, location, and services.</p>
         </div>
         <div class="service">
             <img data-aos="zoom-in" src="/portfolio/public/images/real-estate.jpg" alt="Web Development">
             <h1 data-aos="fade-up" class="child">Real Estate Websites</h1>
-            <p data-aos="fade-up" data-aos-delay="300" class="child">Websites for real estate agents and agencies to list properties and attract buyers.</p>
+            <p data-aos="fade-up" data-aos-delay="0" class="child">Websites for real estate agents and agencies to list properties and attract buyers.</p>
         </div>
 
     </div>
@@ -189,7 +189,7 @@ require_once __DIR__ . '/database/database.php';
 <section id="resume_section">
     <h1 data-aos="fade-up">Resume</h1>
     <div class="education_section">
-        <h2 data-aos="fade-up" data-aos-delay="300" class="heading">Education</h2>
+        <h2 data-aos="fade-up" data-aos-delay="0" class="heading">Education</h2>
         <div class="edu-details-box" data-aos="slide-left">
             <div class="uni-details">
                 <h1><i class="fa-solid fa-earth-americas"></i>10-12-2020</h1>
@@ -263,7 +263,7 @@ require_once __DIR__ . '/database/database.php';
     <!-- Skills section -->
     <div id="technical_skills_section" class="language-skill-same-class">
         <h2 data-aos="fade-up" class="heading">Professional Skills</h2>
-        <div class="skills_container language-skill-same-container" data-aos="fade-up" data-aos-delay="300">
+        <div class="skills_container language-skill-same-container" data-aos="fade-up" data-aos-delay="0">
             <h1>
                 <div class="bullet"></div> Entrepreneurial Mindset
             </h1>
@@ -288,7 +288,7 @@ require_once __DIR__ . '/database/database.php';
     <!-- Language section -->
     <div id="language_section" class="language-skill-same-class">
         <h2 class="heading" data-aos="fade-up">Languages</h2>
-        <div class="language_container language-skill-same-container" data-aos="fade-up" data-aos-delay="300">
+        <div class="language_container language-skill-same-container" data-aos="fade-up" data-aos-delay="0">
             <h1>
                 <div class="bullet"></div> English
             </h1>
@@ -305,7 +305,7 @@ require_once __DIR__ . '/database/database.php';
 <!-- portfolio section -->
 <section id="portfolio_section">
     <h1 data-aos="fade-up">My Portfolio</h1>
-    <p data-aos="fade-up" data-aos-delay="300">Here are some of my projects:</p>
+    <p data-aos="fade-up" data-aos-delay="0">Here are some of my projects:</p>
     <div class="projects_container">
         <?php
         // Fetch projects from the database
@@ -326,7 +326,7 @@ require_once __DIR__ . '/database/database.php';
             echo '    </div>';
             echo '    <div class="project_detail">';
             echo '        <h2 class="project_title" data-aos="fade-up"><a href="/portfolio/pages/php/project-details.php?project=' . rawurlencode($project['slug']) . '">' . htmlspecialchars($project['title'], ENT_QUOTES, 'UTF-8') . '</a></h2>';
-            echo '        <p class="project_description" data-aos="fade-up" data-aos-delay="300">' . $project['short_description'] . '</p>';
+            echo '        <p class="project_description" data-aos="fade-up" data-aos-delay="0">' . $project['short_description'] . '</p>';
             echo '    </div>';
             echo '</div>';
         }
@@ -336,25 +336,25 @@ require_once __DIR__ . '/database/database.php';
 <!-- Facts section -->
 <section id="facts_section">
     <h1 data-aos="fade-up">Facts</h1>
-    <p data-aos="fade-up" data-aos-delay="300">Over the years, we've delivered high-quality digital solutions with a
+    <p data-aos="fade-up" data-aos-delay="0">Over the years, we've delivered high-quality digital solutions with a
         strong focus on performance and
         customer satisfaction.</p>
 
     <div class="facts_container">
         <div class="fact">
-            <h1 data-aos="fade-up" data-aos-delay="400">232</h1>
+            <h1 data-aos="fade-up" data-aos-delay="0">232</h1>
             <p data-aos="zoom-in" data-aos-delay="0">Clients</p>
         </div>
         <div class="fact">
-            <h1 data-aos="fade-up" data-aos-delay="600">34</h1>
+            <h1 data-aos="fade-up" data-aos-delay="0">34</h1>
             <p data-aos="zoom-in" data-aos-delay="0">Projects</p>
         </div>
         <div class="fact">
-            <h1 data-aos="fade-up" data-aos-delay="800">976</h1>
+            <h1 data-aos="fade-up" data-aos-delay="0">976</h1>
             <p data-aos="zoom-in" data-aos-delay="0">Hours of Support</p>
         </div>
         <div class="fact">
-            <h1 data-aos="fade-up" data-aos-delay="1000">22</h1>
+            <h1 data-aos="fade-up" data-aos-delay="0">22</h1>
             <p data-aos="zoom-in" data-aos-delay="0">Workers</p>
         </div>
     </div>

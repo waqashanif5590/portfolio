@@ -14,7 +14,7 @@
             </div>
 
             <div class="details_container">
-                <h1 data-aos="fade-up">UI/UX and Full Stack Developer</h1>
+                <h1 data-aos="fade-up">PHP and Laravel Full Stack Developer</h1>
                 <p data-aos="fade-down" data-aos-delay="500">I specialize in creating user-friendly and visually
                     appealing interfaces for mobiles and web
                     applications while also being proficient
@@ -22,18 +22,18 @@
                 <div class="personal_details">
                     <div class="part_1 details_same">
                         <p data-aos="fade-up" data-aos-delay="0"><strong>Name:</strong> Muhammad Waqas Hanif</p>
-                        <p data-aos="fade-up" data-aos-delay="200"><strong>Email:</strong> waqas@example.com</p>
-                        <p data-aos="fade-up" data-aos-delay="400"><strong>Phone:</strong> +92 300 1234567</p>
+                        <p data-aos="fade-up" data-aos-delay="200"><strong>Email:</strong> waqashanif5590@gmail.com</p>
+                        <p data-aos="fade-up" data-aos-delay="400"><strong>Phone:</strong> +92 3485990122</p>
                         <p data-aos="fade-up" data-aos-delay="600"><strong>Website:</strong> www.example.com</p>
                         <p data-aos="fade-up" data-aos-delay="800"><strong>Freelance:</strong> Available</p>
                     </div>
                     <div class="part_2 details_same">
-                        <p data-aos="fade-up" data-aos-delay="0"><strong>Age:</strong> 30</p>
+                        <p data-aos="fade-up" data-aos-delay="0"><strong>Age:</strong> 22</p>
                         <p data-aos="fade-up" data-aos-delay="200"><strong>Education:</strong> BS in Computer Science
                         </p>
-                        <p data-aos="fade-up" data-aos-delay="400"><strong>Experience:</strong> 5 years</p>
+                        <p data-aos="fade-up" data-aos-delay="400"><strong>Experience:</strong> 2 year(s)</p>
                         <p data-aos="fade-up" data-aos-delay="600"><strong>Location:</strong> Pakistan</p>
-                        <p data-aos="fade-up" data-aos-delay="800"><strong>City:</strong> Lahore</p>
+                        <p data-aos="fade-up" data-aos-delay="800"><strong>City:</strong> Jhang</p>
                     </div>
 
 

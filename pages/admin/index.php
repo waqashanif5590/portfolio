@@ -116,7 +116,9 @@ if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] == fals
                     </div>
 
                     <strong class="summary-number">
-                        12
+                        <?php $stmt = $pdo->query("SELECT COUNT(*) FROM contact_messages");
+                        $result = $stmt->fetchColumn();
+                        echo $result; ?>
                     </strong>
 
                     <span class="summary-description">
@@ -220,7 +222,7 @@ if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] == fals
                                     <div class="project-name-cell">
 
                                         <div class="project-placeholder">
-                                            ✅
+                                            ' . strtoupper(substr($project['title'], 0, 1)) . '
                                         </div>
 
                                         <div>
@@ -288,6 +290,13 @@ if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] == fals
                             </tr>
                              ';
                             }
+                            if (empty($projects)) {
+                                echo '<tr>
+                                <td class="project-name-cell" colspan="5">
+                                No project uploaded
+                                </td>
+                                </tr>';
+                            }
                             ?>
 
                         </tbody>
@@ -335,14 +344,19 @@ if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] == fals
                 <div class="messages-list">
 
 
-                    <!-- Message 01 -->
-
-                    <a
+                    <?php
+                    $stmt = $pdo->query("SELECT * FROM contact_messages");
+                    $messages = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                    foreach ($messages as $message) {
+                        $dbDate = $message['created_at'];
+                        $date = new DateTime($dbDate);
+                        echo '
+                     <a
                         class="message-row message-unread"
                         href="#">
 
                         <div class="message-avatar">
-                            A
+                            ' . strtoupper(substr($message['name'], 0, 1)) . '
                         </div>
 
 
@@ -351,7 +365,7 @@ if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] == fals
                             <div class="message-top">
 
                                 <strong>
-                                    Ahmed Khan
+                                    ' . $message['name'] . '
                                 </strong>
 
                                 <span class="unread-label">
@@ -361,11 +375,11 @@ if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] == fals
                             </div>
 
                             <span class="message-email">
-                                ahmed@example.com
+                                  ' . $message['email'] . '
                             </span>
 
                             <p>
-                                I would like to discuss a Laravel project with you...
+                                 ' . $message['subject'] . '
                             </p>
 
                         </div>
@@ -374,7 +388,7 @@ if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] == fals
                         <div class="message-meta">
 
                             <span>
-                                Sep 16
+                                  ' . $date->format('F j, Y') . '
                             </span>
 
                             <span class="message-arrow">
@@ -383,152 +397,9 @@ if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] == fals
 
                         </div>
 
-                    </a>
-
-
-                    <!-- Message 02 -->
-
-                    <a
-                        class="message-row message-unread"
-                        href="#">
-
-                        <div class="message-avatar">
-                            S
-                        </div>
-
-
-                        <div class="message-content">
-
-                            <div class="message-top">
-
-                                <strong>
-                                    Sarah Ali
-                                </strong>
-
-                                <span class="unread-label">
-                                    New
-                                </span>
-
-                            </div>
-
-                            <span class="message-email">
-                                sarah@example.com
-                            </span>
-
-                            <p>
-                                Your portfolio looks interesting. I wanted to ask about...
-                            </p>
-
-                        </div>
-
-
-                        <div class="message-meta">
-
-                            <span>
-                                Sep 15
-                            </span>
-
-                            <span class="message-arrow">
-                                →
-                            </span>
-
-                        </div>
-
-                    </a>
-
-
-                    <!-- Message 03 -->
-
-                    <a
-                        class="message-row"
-                        href="#">
-
-                        <div class="message-avatar">
-                            M
-                        </div>
-
-
-                        <div class="message-content">
-
-                            <div class="message-top">
-
-                                <strong>
-                                    Muhammad Hassan
-                                </strong>
-
-                            </div>
-
-                            <span class="message-email">
-                                hassan@example.com
-                            </span>
-
-                            <p>
-                                I have checked your projects and would like to know...
-                            </p>
-
-                        </div>
-
-
-                        <div class="message-meta">
-
-                            <span>
-                                Sep 14
-                            </span>
-
-                            <span class="message-arrow">
-                                →
-                            </span>
-
-                        </div>
-
-                    </a>
-
-
-                    <!-- Message 04 -->
-
-                    <a
-                        class="message-row"
-                        href="#">
-
-                        <div class="message-avatar">
-                            R
-                        </div>
-
-
-                        <div class="message-content">
-
-                            <div class="message-top">
-
-                                <strong>
-                                    Rayan Ahmed
-                                </strong>
-
-                            </div>
-
-                            <span class="message-email">
-                                rayan@example.com
-                            </span>
-
-                            <p>
-                                I wanted to contact you regarding a website development...
-                            </p>
-
-                        </div>
-
-
-                        <div class="message-meta">
-
-                            <span>
-                                Sep 12
-                            </span>
-
-                            <span class="message-arrow">
-                                →
-                            </span>
-
-                        </div>
-
-                    </a>
+                    </a>';
+                    }
+                    ?>
 
                 </div>
 
