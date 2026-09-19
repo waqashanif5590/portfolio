@@ -1,5 +1,5 @@
 <?php
-include __DIR__ . '/../../database/database.php';
+include __DIR__ . '/../../config/database.php';
 session_start();
 if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] == false) {
     header("Location: /portfolio/pages/admin/login.php");
@@ -696,210 +696,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
 
-                        <!-- Image 02 -->
-
-                        <div class="image-card">
-
-                            <div class="image-card-header">
-
-                                <span class="item-number">
-                                    Image 02
-                                </span>
-
-                                <label class="primary-option">
-
-                                    <input
-                                        type="radio"
-                                        name="primary_image"
-                                        value="2">
-
-                                    <span class="radio-mark"></span>
-
-                                    <span>
-                                        Primary image
-                                    </span>
-
-                                </label>
-
-                            </div>
-
-
-                            <div class="image-form">
-
-                                <div class="image-upload">
-
-                                    <label
-                                        for="project-image-2"
-                                        class="upload-box">
-
-                                        <span class="upload-icon">
-                                            ↑
-                                        </span>
-
-                                        <strong>
-                                            Choose project image
-                                        </strong>
-
-                                        <small>
-                                            PNG, JPG or WEBP
-                                        </small>
-
-                                    </label>
-
-                                    <input
-                                        type="file"
-                                        id="project-image-2"
-                                        name="images[]"
-                                        accept="image/png,image/jpeg,image/webp">
-
-                                </div>
-
-
-                                <div class="image-details">
-
-                                    <div class="form-field">
-
-                                        <label for="alt-text-2">
-                                            Alt text
-                                        </label>
-
-                                        <input
-                                            type="text"
-                                            id="alt-text-2"
-                                            name="image_alt_text[2]"
-                                            placeholder="Describe the image">
-
-                                    </div>
-
-
-                                    <div class="form-field">
-
-                                        <label for="caption-2">
-                                            Caption
-                                            <span class="optional">
-                                                Optional
-                                            </span>
-                                        </label>
-
-                                        <input
-                                            type="text"
-                                            id="caption-2"
-                                            name="image_caption[2]"
-                                            placeholder="Image caption">
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-
-
-                        <!-- Image 03 -->
-
-                        <div class="image-card">
-
-                            <div class="image-card-header">
-
-                                <span class="item-number">
-                                    Image 03
-                                </span>
-
-                                <label class="primary-option">
-
-                                    <input
-                                        type="radio"
-                                        name="primary_image"
-                                        value="3">
-
-                                    <span class="radio-mark"></span>
-
-                                    <span>
-                                        Primary image
-                                    </span>
-
-                                </label>
-
-                            </div>
-
-
-                            <div class="image-form">
-
-                                <div class="image-upload">
-
-                                    <label
-                                        for="project-image-3"
-                                        class="upload-box">
-
-                                        <span class="upload-icon">
-                                            ↑
-                                        </span>
-
-                                        <strong>
-                                            Choose project image
-                                        </strong>
-
-                                        <small>
-                                            PNG, JPG or WEBP
-                                        </small>
-
-                                    </label>
-
-                                    <input
-                                        type="file"
-                                        id="project-image-3"
-                                        name="images[]"
-                                        accept="image/png,image/jpeg,image/webp">
-
-                                </div>
-
-
-                                <div class="image-details">
-
-                                    <div class="form-field">
-
-                                        <label for="alt-text-3">
-                                            Alt text
-                                        </label>
-
-                                        <input
-                                            type="text"
-                                            id="alt-text-3"
-                                            name="image_alt_text[3]"
-                                            placeholder="Describe the image">
-
-                                    </div>
-
-
-                                    <div class="form-field">
-
-                                        <label for="caption-3">
-                                            Caption
-                                            <span class="optional">
-                                                Optional
-                                            </span>
-                                        </label>
-
-                                        <input
-                                            type="text"
-                                            id="caption-3"
-                                            name="image_caption[3]"
-                                            placeholder="Image caption">
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-
                         <button
                             type="button"
-                            class="add-item-button">
+                            class="add-item-button"
+                            id="add-image-btn">
                             <span>+</span>
                             Add another image
                         </button>
@@ -940,9 +740,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <script>
         const addFeatureBtn = document.getElementById('add-feature-btn');
         const featureContainer = document.getElementById('features-container');
-        let featureNumber = 1;
+        let featureNumber = 2;
         addFeatureBtn.addEventListener('click', () => {
-            featureContainer.innerHTML += `
+            addFeatureBtn.insertAdjacentHTML('beforebegin', `
                <div class="feature-card">
 
                             <div class="feature-card-header">
@@ -1011,9 +811,64 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                             </div>
 
-                        </div>`;
+                        </div>`);
             featureNumber++;
-        })
+        });
+
+        const addImageBtn = document.getElementById('add-image-btn');
+        let imageNumber = 2;
+        addImageBtn.addEventListener('click', () => {
+            addImageBtn.insertAdjacentHTML('beforebegin', `
+                <div class="image-card">
+                    <div class="image-card-header">
+                        <span class="item-number">Image 0${imageNumber}</span>
+                        <label class="primary-option">
+                            <input type="radio" name="primary_image" value="${imageNumber}">
+                            <span class="radio-mark"></span>
+                            <span>Primary image</span>
+                        </label>
+                    </div>
+
+                    <div class="image-form">
+                        <div class="image-upload">
+                            <label for="project-image-${imageNumber}" class="upload-box">
+                                <span class="upload-icon">↑</span>
+                                <strong>Choose project image</strong>
+                                <small>PNG, JPG or WEBP</small>
+                            </label>
+                            <input
+                                type="file"
+                                id="project-image-${imageNumber}"
+                                name="images[]"
+                                accept="image/png,image/jpeg,image/webp">
+                        </div>
+
+                        <div class="image-details">
+                            <div class="form-field">
+                                <label for="alt-text-${imageNumber}">Alt text</label>
+                                <input
+                                    type="text"
+                                    id="alt-text-${imageNumber}"
+                                    name="image_alt_text[${imageNumber}]"
+                                    placeholder="Describe the image">
+                            </div>
+
+                            <div class="form-field">
+                                <label for="caption-${imageNumber}">
+                                    Caption
+                                    <span class="optional">Optional</span>
+                                </label>
+                                <input
+                                    type="text"
+                                    id="caption-${imageNumber}"
+                                    name="image_caption[${imageNumber}]"
+                                    placeholder="Image caption">
+                            </div>
+                        </div>
+                    </div>
+                </div>`);
+            imageNumber++;
+        });
     </script>
 
 </body>

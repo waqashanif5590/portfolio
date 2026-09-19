@@ -1,0 +1,122 @@
+[
+    {
+        "name": "PHP",
+        "slug": "php",
+        "category": "Programming Language",
+        "icon": "devicon-php-plain"
+    },
+    {
+        "name": "JavaScript",
+        "slug": "javascript",
+        "category": "Programming Language",
+        "icon": "devicon-javascript-plain"
+    },
+    {
+        "name": "HTML5",
+        "slug": "html5",
+        "category": "Markup Language",
+        "icon": "devicon-html5-plain"
+    },
+    {
+        "name": "CSS3",
+        "slug": "css3",
+        "category": "Styling Language",
+        "icon": "devicon-css3-plain"
+    },
+    {
+        "name": "Laravel",
+        "slug": "laravel",
+        "category": "Framework",
+        "icon": "devicon-laravel-plain"
+    },
+    {
+        "name": "Livewire",
+        "slug": "livewire",
+        "category": "Framework",
+        "icon": "devicon-livewire-plain"
+    },
+    {
+        "name": "Alpine.js",
+        "slug": "alpine-js",
+        "category": "JavaScript Library",
+        "icon": "devicon-alpinejs-plain"
+    },
+    {
+        "name": "MySQL",
+        "slug": "mysql",
+        "category": "Database",
+        "icon": "devicon-mysql-plain"
+    },
+    {
+        "name": "Blade",
+        "slug": "blade",
+        "category": "Templating Engine",
+        "icon": null
+    },
+    {
+        "name": "Eloquent ORM",
+        "slug": "eloquent-orm",
+        "category": "ORM",
+        "icon": null
+    },
+    {
+        "name": "Laravel Breeze",
+        "slug": "laravel-breeze",
+        "category": "Authentication",
+        "icon": null
+    },
+    {
+        "name": "Tailwind CSS",
+        "slug": "tailwind-css",
+        "category": "CSS Framework",
+        "icon": "devicon-tailwindcss-plain"
+    },
+    {
+        "name": "Pusher",
+        "slug": "pusher",
+        "category": "Real-Time Service",
+        "icon": null
+    },
+    {
+        "name": "WebSockets",
+        "slug": "websockets",
+        "category": "Real-Time Technology",
+        "icon": null
+    },
+    {
+        "name": "Visual Crossing Weather API",
+        "slug": "visual-crossing-weather-api",
+        "category": "API",
+        "icon": null
+    },
+    {
+        "name": "LocalStorage API",
+        "slug": "localstorage-api",
+        "category": "Browser API",
+        "icon": null
+    },
+    {
+        "name": "Font Awesome",
+        "slug": "font-awesome",
+        "category": "Icon Library",
+        "icon": "fa-solid fa-icons"
+    },
+    {
+        "name": "Vite",
+        "slug": "vite",
+        "category": "Build Tool",
+        "icon": "devicon-vitejs-plain"
+    },
+    {
+        "name": "Git",
+        "slug": "git",
+        "category": "Version Control",
+        "icon": "devicon-git-plain"
+    },
+    {
+        "name": "GitHub",
+        "slug": "github",
+        "category": "Code Hosting",
+        "icon": "devicon-github-original"
+    }
+]

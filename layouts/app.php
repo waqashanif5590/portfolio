@@ -7,7 +7,7 @@ $styles = $styles ?? ['portfolio.css', 'portfolioMobile.css'];
 ?>
 
 <?php
-include __DIR__ . '/../database/database.php';
+include __DIR__ . '/../config/database.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">

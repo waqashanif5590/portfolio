@@ -17,11 +17,11 @@
     </div>
 
     <div class="navbar_social_container">
-        <a href="" class="icon" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
-        <a href="" class="icon" title="X-Twitter"><i class="fa-brands fa-x-twitter"></i></a>
-        <a href="" class="icon" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-        <a href="" class="icon" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
-        <a href="" class="icon" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/share/1C55MuPLrG/" class="icon" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://twitter.com/roy_waqas_hanif" class="icon" title="X-Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://api.whatsapp.com/message/CS4YWQY433ROE1?autoload=1&app_absent=0" class="icon" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.youtube.com/@roy_waqas_hanif" class="icon" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.instagram.com/roy_waqas_hanif?stkn=aWNndm4yaDQ1Z2g2" class="icon" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
         <div id="hamburger" class="hamburger">
             <div class="line"></div>
             <div class="line"></div>

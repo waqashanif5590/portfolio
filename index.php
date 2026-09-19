@@ -3,7 +3,7 @@ $title = 'Home';
 $styles = ['about.css', 'resume.css', 'contact.css', 'services.css', 'portfolio.css', 'styleMobile.css'];
 ob_start();
 
-require_once __DIR__ . '/database/database.php';
+require_once __DIR__ . '/config/database.php';
 ?>
 
 
@@ -29,7 +29,7 @@ require_once __DIR__ . '/database/database.php';
 
     <div class="details">
         <div data-aos="zoom-in" class="image_container">
-            <img src="/portfolio/public/images/wikibhai-croped.jpeg" alt="">
+            <img src="/portfolio/assets/images/profile.jpeg" alt="">
         </div>
 
         <div class="details_container">
@@ -41,9 +41,9 @@ require_once __DIR__ . '/database/database.php';
             <div class="personal_details">
                 <div class="part_1 details_same">
                     <p data-aos="fade-up" data-aos-delay="0"><strong>Name:</strong> Muhammad Waqas Hanif</p>
-                    <p data-aos="fade-up" data-aos-delay="0"><strong>Email:</strong> waqashanif5590@gmail.com</p>
+                    <p data-aos="fade-up" data-aos-delay="0"><strong>Email:</strong> <a href="mailto:waqashanif5590@gmail.com">waqashanif5590@gmail.com</a></p>
                     <p data-aos="fade-up" data-aos-delay="0"><strong>Phone:</strong> +92 3485990122</p>
-                    <p data-aos="fade-up" data-aos-delay="0"><strong>Website:</strong> www.example.com</p>
+                    <p data-aos="fade-up" data-aos-delay="0"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/waqas-hanif-023238437" target="_blank">https://www.linkedin.com/in/waqas-hanif-023238437</a></p>
                     <p data-aos="fade-up" data-aos-delay="0"><strong>Freelance:</strong> Available</p>
                 </div>
                 <div class="part_2 details_same">
@@ -142,42 +142,42 @@ require_once __DIR__ . '/database/database.php';
     <div class="services_container">
         <div class="service">
             <!-- take image online that is related to the service -->
-            <img data-aos="zoom-in" src="/portfolio/public/images/blog.jpg" alt="Web Development">
+            <img data-aos="zoom-in" src="/portfolio/assets/images/blog.jpg" alt="Web Development">
             <h1 data-aos="fade-up" class="child">Blogg Websites</h1>
             <p data-aos="fade-up" data-aos-delay="0" class="child">Blog websites for sharing knowledge and experiences.</p>
         </div>
         <div class="service">
-            <img data-aos="zoom-in" src="/portfolio/public/images/business.jpg" alt="Web Development">
+            <img data-aos="zoom-in" src="/portfolio/assets/images/business.jpg" alt="Web Development">
             <h1 data-aos="fade-up" class="child">Business Websites</h1>
             <p data-aos="fade-up" data-aos-delay="0" class="child">Professional websites for businesses to showcase their products and services.</p>
         </div>
         <div class="service">
-            <img data-aos="zoom-in" src="/portfolio/public/images/gym.jpg" alt="Web Development">
+            <img data-aos="zoom-in" src="/portfolio/assets/images/gym.jpg" alt="Web Development">
             <h1 data-aos="fade-up" class="child">Gym/Fitness Club Websites</h1>
             <p data-aos="fade-up" data-aos-delay="0" class="child">Websites for fitness centers and gyms to attract new members and promote their services.</p>
         </div>
         <div class="service">
-            <img data-aos="zoom-in" src="/portfolio/public/images/lms.jpg" alt="Web Development">
+            <img data-aos="zoom-in" src="/portfolio/assets/images/lms.jpg" alt="Web Development">
             <h1 data-aos="fade-up" class="child">LMS Portals</h1>
             <p data-aos="fade-up" data-aos-delay="0" class="child">Learning management systems for educational institutions and training programs.</p>
         </div>
         <div class="service">
-            <img data-aos="zoom-in" src="/portfolio/public/images/portfolio_temple.jpg" alt="Web Development">
+            <img data-aos="zoom-in" src="/portfolio/assets/images/portfolio_temple.jpg" alt="Web Development">
             <h1 data-aos="fade-up" class="child">Portfolio Websites</h1>
             <p data-aos="fade-up" data-aos-delay="0" class="child">Showcase your work and skills with a professional portfolio website.</p>
         </div>
         <div class="service">
-            <img data-aos="zoom-in" src="/portfolio/public/images/ecommerce.jpg" alt="Web Development">
+            <img data-aos="zoom-in" src="/portfolio/assets/images/ecommerce.jpg" alt="Web Development">
             <h1 data-aos="fade-up" class="child">E-Commerce Websites</h1>
             <p data-aos="fade-up" data-aos-delay="0" class="child">Online stores for selling products and services to customers.</p>
         </div>
         <div class="service">
-            <img data-aos="zoom-in" src="/portfolio/public/images/resturent.jpg" alt="Web Development">
+            <img data-aos="zoom-in" src="/portfolio/assets/images/resturent.jpg" alt="Web Development">
             <h1 data-aos="fade-up" class="child">Restaurant Websites</h1>
             <p data-aos="fade-up" data-aos-delay="0" class="child">Websites for restaurants to showcase their menu, location, and services.</p>
         </div>
         <div class="service">
-            <img data-aos="zoom-in" src="/portfolio/public/images/real-estate.jpg" alt="Web Development">
+            <img data-aos="zoom-in" src="/portfolio/assets/images/real-estate.jpg" alt="Web Development">
             <h1 data-aos="fade-up" class="child">Real Estate Websites</h1>
             <p data-aos="fade-up" data-aos-delay="0" class="child">Websites for real estate agents and agencies to list properties and attract buyers.</p>
         </div>
@@ -319,7 +319,7 @@ require_once __DIR__ . '/database/database.php';
         foreach ($projects as $project) {
             $image_url = $project['primary_image']
                 ? '/portfolio/uploads/images/' . htmlspecialchars($project['primary_image'], ENT_QUOTES, 'UTF-8')
-                : '/portfolio/public/images/business.jpg';
+                : '/portfolio/assets/images/business.jpg';
             echo '<div class="project">';
             echo '    <div data-aos="fade-up" class="project_image">';
             echo '        <img src="' . $image_url . '" alt="' . htmlspecialchars($project['title'], ENT_QUOTES, 'UTF-8') . '">';

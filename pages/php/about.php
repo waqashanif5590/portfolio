@@ -10,7 +10,7 @@
 
         <div class="details">
             <div data-aos="zoom-in" class="image_container">
-                <img src="/portfolio/public/images/wikibhai-croped.jpeg" alt="">
+                <img src="/portfolio/assets/images/profile.jpeg" alt="">
             </div>
 
             <div class="details_container">
@@ -22,9 +22,9 @@
                 <div class="personal_details">
                     <div class="part_1 details_same">
                         <p data-aos="fade-up" data-aos-delay="0"><strong>Name:</strong> Muhammad Waqas Hanif</p>
-                        <p data-aos="fade-up" data-aos-delay="200"><strong>Email:</strong> waqashanif5590@gmail.com</p>
+                        <p data-aos="fade-up" data-aos-delay="200"><strong>Email:</strong> <a href="mailto:waqashanif5590@gmail.com">waqashanif5590@gmail.com</a></p>
                         <p data-aos="fade-up" data-aos-delay="400"><strong>Phone:</strong> +92 3485990122</p>
-                        <p data-aos="fade-up" data-aos-delay="600"><strong>Website:</strong> www.example.com</p>
+                        <p data-aos="fade-up" data-aos-delay="600"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/waqashanif" target="_blank">https://www.linkedin.com/in/waqashanif</a></p>
                         <p data-aos="fade-up" data-aos-delay="800"><strong>Freelance:</strong> Available</p>
                     </div>
                     <div class="part_2 details_same">
@@ -52,24 +52,24 @@
         <div class="skills_container">
             <div class="skills_part1 skills_same_part">
                 <div class="progress">
-                    <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
-                    <div class="progress-bar-wrap">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
-                            aria-valuemax="100" style="width: 100%;"></div>
-                    </div>
-                </div>
-                <div class="progress">
-                    <span class="skill"><span>CSS</span> <i class="val">95%</i></span>
+                    <span class="skill"><span>HTML</span> <i class="val">95%</i></span>
                     <div class="progress-bar-wrap">
                         <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
                             aria-valuemax="100" style="width: 95%;"></div>
                     </div>
                 </div>
                 <div class="progress">
-                    <span class="skill"><span>TailWind CSS</span> <i class="val">90%</i></span>
+                    <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
                     <div class="progress-bar-wrap">
                         <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
                             aria-valuemax="100" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="progress">
+                    <span class="skill"><span>TailWind CSS</span> <i class="val">80%</i></span>
+                    <div class="progress-bar-wrap">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                            aria-valuemax="100" style="width: 80%;"></div>
                     </div>
                 </div>
                 <div class="progress">
@@ -83,10 +83,10 @@
 
             <div class="skills_part2 skills_same_part">
                 <div class="progress">
-                    <span class="skill"><span>PHP</span> <i class="val">85%</i></span>
+                    <span class="skill"><span>PHP</span> <i class="val">75%</i></span>
                     <div class="progress-bar-wrap">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
-                            aria-valuemax="100" style="width: 85%;"></div>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                            aria-valuemax="100" style="width: 75%;"></div>
                     </div>
                 </div>
                 <div class="progress">

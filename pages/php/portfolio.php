@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/../../database/database.php';
+require_once __DIR__ . '/../../config/database.php';
 
 $title = 'Portfolio';
 $styles = ['portfolio.css', 'portfolioMobile.css'];
@@ -23,7 +23,7 @@ ob_start();
         foreach ($projects as $project) {
             $image_url = $project['primary_image']
                 ? '/portfolio/uploads/images/' . htmlspecialchars($project['primary_image'], ENT_QUOTES, 'UTF-8')
-                : '/portfolio/public/images/business.jpg';
+                : '/portfolio/assets/images/business.jpg';
             echo '<div class="project">';
             echo '    <div data-aos="fade-up" class="project_image">';
             echo '        <img src="' . $image_url . '" alt="' . htmlspecialchars($project['title'], ENT_QUOTES, 'UTF-8') . '">';

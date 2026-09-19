@@ -1,5 +1,5 @@
     <?php
-    include __DIR__ . '/../../database/database.php';
+    include __DIR__ . '/../../config/database.php';
 
     if (isset($_SESSION['admin_logged_in']) && $_SESSION['admin_logged_in'] == true) {
         header("Location: /portfolio/pages/admin/index.php");
@@ -47,7 +47,7 @@
         <main class="login-shell">
             <section class="login-intro" aria-label="Portfolio administration">
                 <a class="brand-mark" href="/portfolio/" aria-label="Return to portfolio home">
-                    <img src="/portfolio/public/images/Black_Grey_Simple_Modern_Name_Logo__2_-removebg-preview.png" alt="WikiBhai">
+                    <img src="/portfolio/assets/images/profile.jpeg" alt="WikiBhai">
                 </a>
 
                 <div class="intro-copy">

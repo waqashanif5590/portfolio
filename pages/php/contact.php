@@ -3,7 +3,7 @@ $title = 'Contact Me';
 $styles = ['contact.css', 'contactMobile.css'];
 ob_start();
 
-include __DIR__ . '/../../database/database.php';
+include __DIR__ . '/../../config/database.php';
 ?>
 
 <?php

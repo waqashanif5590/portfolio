@@ -114,7 +114,10 @@ p strong {
     margin-right: 10px;
     color: #ffffff;
 }
-
+.details_same p a {
+    color: #34b7a7;
+    text-decoration: none;
+}
 /* Skills section */
 #skills_section {
     display: flex;

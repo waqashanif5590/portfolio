@@ -1,5 +1,5 @@
 <?php
-include __DIR__ . '/../../database/database.php';
+include __DIR__ . '/../../config/database.php';
 session_start();
 if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] == false) {
     header("Location: /portfolio/pages/admin/login.php");
