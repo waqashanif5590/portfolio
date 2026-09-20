@@ -4,6 +4,16 @@ CREATE DATABASE IF NOT EXISTS my_portfolio
 
 USE my_portfolio;
 
+-- Create admin table if it doesn't exist
+CREATE TABLE IF NOT EXISTS admins (
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(50) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    status boolean NOT NULL DEFAULT 1,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+)
+
 -- =========================================================
 -- 1. Projects
 -- =========================================================
