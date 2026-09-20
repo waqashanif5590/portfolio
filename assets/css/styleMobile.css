@@ -1,21 +1,47 @@
-#landing_section{
+#landing_section {
     min-height: 0;
 }
-.landing_content{
+
+.landing_content {
     padding: 30px;
     padding-top: 50px;
 }
+
 .landing_content h1 {
     font-size: 30px;
     text-align: left;
 }
+
 .landing_content p {
     font-size: 18px;
     width: 100%;
     text-align: left;
     line-height: 28px;
 }
+
 .landing_content #more {
     width: 200px;
     text-align: center;
+}
+
+.language-skill-same-container {
+    width: 100%;
+    min-height: 0;
+    height: auto;
+    padding: 1rem;
+    gap: 0.5rem;
+    align-items: stretch;
+}
+
+.language-skill-same-container h1 {
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 0.5rem;
+    line-height: 1.35;
+}
+
+.language-skill-same-container .bullet {
+    flex: 0 0 13px;
+    margin-right: 0.75rem;
 }

@@ -140,7 +140,8 @@
     padding: 10px 30px;
     font-family: "Raleway", sans-serif;
     margin: 20px 0px;
-    height: 280px;
+    min-height: 280px;
+    height: auto;
     flex-wrap: wrap;
     border: 1px solid #34b7a7;
     border-radius: 16px;
@@ -170,6 +171,8 @@
     font-style: normal;
     padding: 0px 20px;
     width: 50%;
+    min-width: 0;
+    margin: 0;
     align-items: center;
     font-family: "Raleway", sans-serif;
     color: #ffffff;
