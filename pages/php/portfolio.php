@@ -22,14 +22,14 @@ ob_start();
         $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
         foreach ($projects as $project) {
             $image_url = $project['primary_image']
-                ? '/portfolio/uploads/images/' . htmlspecialchars($project['primary_image'], ENT_QUOTES, 'UTF-8')
-                : '/portfolio/assets/images/business.jpg';
+                ? '/uploads/images/' . htmlspecialchars($project['primary_image'], ENT_QUOTES, 'UTF-8')
+                : '/assets/images/business.jpg';
             echo '<div class="project">';
             echo '    <div data-aos="fade-up" class="project_image">';
             echo '        <img src="' . $image_url . '" alt="' . htmlspecialchars($project['title'], ENT_QUOTES, 'UTF-8') . '">';
             echo '    </div>';
             echo '    <div class="project_detail">';
-            echo '        <h2 class="project_title" data-aos="fade-up"><a href="/portfolio/pages/php/project-details.php?project=' . rawurlencode($project['slug']) . '">' . htmlspecialchars($project['title'], ENT_QUOTES, 'UTF-8') . '</a></h2>';
+            echo '        <h2 class="project_title" data-aos="fade-up"><a href="/pages/php/project-details.php?project=' . rawurlencode($project['slug']) . '">' . htmlspecialchars($project['title'], ENT_QUOTES, 'UTF-8') . '</a></h2>';
             echo '        <p class="project_description" data-aos="fade-up" data-aos-delay="300">' . $project['short_description'] . '</p>';
             echo '    </div>';
             echo '</div>';

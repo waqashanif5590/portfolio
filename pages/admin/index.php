@@ -2,7 +2,7 @@
 include __DIR__ . '/../../config/database.php';
 session_start();
 if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] == false) {
-    header("Location: /portfolio/pages/admin/login.php");
+    header("Location: /pages/admin/login.php");
     exit();
 }
 ?>
@@ -15,7 +15,7 @@ if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] == fals
 
     <title>Admin Dashboard | WikiBhai Portfolio</title>
 
-    <link rel="stylesheet" href="/portfolio/assets/css/admin-dashboard.css">
+    <link rel="stylesheet" href="/assets/css/admin-dashboard.css">
 </head>
 
 <body>

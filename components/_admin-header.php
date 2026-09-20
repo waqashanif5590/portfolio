@@ -2,7 +2,7 @@
 
      <a
          class="dashboard-brand"
-         href="/portfolio/pages/admin/index.php"
+         href="/pages/admin/index.php"
          aria-label="Return to portfolio home">
          WAQAS HANIF
      </a>
@@ -11,7 +11,7 @@
 
          <a
              class="view-portfolio"
-             href="/portfolio/">
+             href="/">
              View portfolio
          </a>
 

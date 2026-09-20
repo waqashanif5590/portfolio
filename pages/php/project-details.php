@@ -20,7 +20,7 @@ if (!$project) {
 		<p class="project-eyebrow">Portfolio</p>
 		<h1>Project not found</h1>
 		<p>The project may have been removed or is not currently published.</p>
-		<a class="project-action" href="/portfolio/pages/php/portfolio.php">Back to portfolio</a>
+		<a class="project-action" href="/pages/php/portfolio.php">Back to portfolio</a>
 	</section>
 	<?php
 	$content = ob_get_clean();
@@ -59,7 +59,7 @@ $styles = ['project-details.css'];
 ob_start();
 ?>
 <section class="project-details-page">
-	<a class="project-back-link" href="/portfolio/pages/php/portfolio.php">&larr; Back to portfolio</a>
+	<a class="project-back-link" href="/pages/php/portfolio.php">&larr; Back to portfolio</a>
 
 	<header class="project-details-header">
 		<p class="project-eyebrow">Featured project</p>
@@ -81,7 +81,7 @@ ob_start();
 
 	<?php if ($primary_image): ?>
 		<figure class="project-hero-image">
-			<img src="/portfolio/uploads/images/<?= $e($primary_image['image']) ?>" alt="<?= $e($primary_image['alt_text'] ?: $project['title']) ?>">
+			<img src="/uploads/images/<?= $e($primary_image['image']) ?>" alt="<?= $e($primary_image['alt_text'] ?: $project['title']) ?>">
 			<?php if (!empty($primary_image['caption'])): ?><figcaption><?= $e($primary_image['caption']) ?></figcaption><?php endif; ?>
 		</figure>
 	<?php endif; ?>
@@ -132,7 +132,7 @@ ob_start();
 			<div class="project-gallery">
 				<?php foreach (array_slice($images, 1) as $image): ?>
 					<figure>
-						<img src="/portfolio/uploads/images/<?= $e($image['image']) ?>" alt="<?= $e($image['alt_text'] ?: $project['title']) ?>">
+						<img src="/uploads/images/<?= $e($image['image']) ?>" alt="<?= $e($image['alt_text'] ?: $project['title']) ?>">
 						<?php if (!empty($image['caption'])): ?><figcaption><?= $e($image['caption']) ?></figcaption><?php endif; ?>
 					</figure>
 				<?php endforeach; ?>

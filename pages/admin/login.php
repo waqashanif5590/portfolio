@@ -2,7 +2,7 @@
     include __DIR__ . '/../../config/database.php';
 
     if (isset($_SESSION['admin_logged_in']) && $_SESSION['admin_logged_in'] == true) {
-        header("Location: /portfolio/pages/admin/index.php");
+        header("Location: /pages/admin/index.php");
         exit();
     }
 
@@ -19,7 +19,7 @@
                     session_start();
                     $_SESSION['admin_logged_in'] = true;
                     $_SESSION['admin_email'] = $result['email'];
-                    header("Location: /portfolio/pages/admin/index.php");
+                    header("Location: /pages/admin/index.php");
                     exit();
                 } else {
                     $error_message = "Invalid password.";
@@ -39,7 +39,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Admin Login</title>
-        <link rel="stylesheet" href="/portfolio/assets/css/admin-login.css">
+        <link rel="stylesheet" href="/assets/css/admin-login.css">
     </head>
 
     <body>
@@ -63,7 +63,7 @@
                     <div id="alert-message">
                         <p class="alert-text"><?php echo isset($error_message) ? $error_message : ''; ?></p>
                     </div>
-                    <form class="login-form" action="/portfolio/pages/admin/login.php" method="post">
+                    <form class="login-form" action="/pages/admin/login.php" method="post">
                         <div class="field-group">
                             <label for="email">Email</label>
                             <input type="email" id="email" name="email" autocomplete="email" placeholder="Enter your Email">

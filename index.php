@@ -14,7 +14,7 @@ require_once __DIR__ . '/config/database.php';
             Developer from Pakistan.</p>
         <div class="learn-more">
             <p data-aos="fade-up" data-aos-delay="0">Click to Learn more</p>
-            <a data-aos="fade-down" data-aos-delay="0" href="/portfolio/pages/php/about.php">About Me</a>
+            <a data-aos="fade-down" data-aos-delay="0" href="/pages/php/about.php">About Me</a>
         </div>
 
     </div>
@@ -29,7 +29,7 @@ require_once __DIR__ . '/config/database.php';
 
     <div class="details">
         <div data-aos="zoom-in" class="image_container">
-            <img src="/portfolio/assets/images/profile.jpeg" alt="">
+            <img src="/assets/images/profile.jpeg" alt="">
         </div>
 
         <div class="details_container">
@@ -142,42 +142,42 @@ require_once __DIR__ . '/config/database.php';
     <div class="services_container">
         <div class="service">
             <!-- take image online that is related to the service -->
-            <img data-aos="zoom-in" src="/portfolio/assets/images/blog.jpg" alt="Web Development">
+            <img data-aos="zoom-in" src="/assets/images/blog.jpg" alt="Web Development">
             <h1 data-aos="fade-up" class="child">Blogg Websites</h1>
             <p data-aos="fade-up" data-aos-delay="0" class="child">Blog websites for sharing knowledge and experiences.</p>
         </div>
         <div class="service">
-            <img data-aos="zoom-in" src="/portfolio/assets/images/business.jpg" alt="Web Development">
+            <img data-aos="zoom-in" src="/assets/images/business.jpg" alt="Web Development">
             <h1 data-aos="fade-up" class="child">Business Websites</h1>
             <p data-aos="fade-up" data-aos-delay="0" class="child">Professional websites for businesses to showcase their products and services.</p>
         </div>
         <div class="service">
-            <img data-aos="zoom-in" src="/portfolio/assets/images/gym.jpg" alt="Web Development">
+            <img data-aos="zoom-in" src="/assets/images/gym.jpg" alt="Web Development">
             <h1 data-aos="fade-up" class="child">Gym/Fitness Club Websites</h1>
             <p data-aos="fade-up" data-aos-delay="0" class="child">Websites for fitness centers and gyms to attract new members and promote their services.</p>
         </div>
         <div class="service">
-            <img data-aos="zoom-in" src="/portfolio/assets/images/lms.jpg" alt="Web Development">
+            <img data-aos="zoom-in" src="/assets/images/lms.jpg" alt="Web Development">
             <h1 data-aos="fade-up" class="child">LMS Portals</h1>
             <p data-aos="fade-up" data-aos-delay="0" class="child">Learning management systems for educational institutions and training programs.</p>
         </div>
         <div class="service">
-            <img data-aos="zoom-in" src="/portfolio/assets/images/portfolio_temple.jpg" alt="Web Development">
+            <img data-aos="zoom-in" src="/assets/images/portfolio_temple.jpg" alt="Web Development">
             <h1 data-aos="fade-up" class="child">Portfolio Websites</h1>
             <p data-aos="fade-up" data-aos-delay="0" class="child">Showcase your work and skills with a professional portfolio website.</p>
         </div>
         <div class="service">
-            <img data-aos="zoom-in" src="/portfolio/assets/images/ecommerce.jpg" alt="Web Development">
+            <img data-aos="zoom-in" src="/assets/images/ecommerce.jpg" alt="Web Development">
             <h1 data-aos="fade-up" class="child">E-Commerce Websites</h1>
             <p data-aos="fade-up" data-aos-delay="0" class="child">Online stores for selling products and services to customers.</p>
         </div>
         <div class="service">
-            <img data-aos="zoom-in" src="/portfolio/assets/images/resturent.jpg" alt="Web Development">
+            <img data-aos="zoom-in" src="/assets/images/resturent.jpg" alt="Web Development">
             <h1 data-aos="fade-up" class="child">Restaurant Websites</h1>
             <p data-aos="fade-up" data-aos-delay="0" class="child">Websites for restaurants to showcase their menu, location, and services.</p>
         </div>
         <div class="service">
-            <img data-aos="zoom-in" src="/portfolio/assets/images/real-estate.jpg" alt="Web Development">
+            <img data-aos="zoom-in" src="/assets/images/real-estate.jpg" alt="Web Development">
             <h1 data-aos="fade-up" class="child">Real Estate Websites</h1>
             <p data-aos="fade-up" data-aos-delay="0" class="child">Websites for real estate agents and agencies to list properties and attract buyers.</p>
         </div>
@@ -318,14 +318,14 @@ require_once __DIR__ . '/config/database.php';
         $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
         foreach ($projects as $project) {
             $image_url = $project['primary_image']
-                ? '/portfolio/uploads/images/' . htmlspecialchars($project['primary_image'], ENT_QUOTES, 'UTF-8')
-                : '/portfolio/assets/images/business.jpg';
+                ? '/uploads/images/' . htmlspecialchars($project['primary_image'], ENT_QUOTES, 'UTF-8')
+                : '/assets/images/business.jpg';
             echo '<div class="project">';
             echo '    <div data-aos="fade-up" class="project_image">';
             echo '        <img src="' . $image_url . '" alt="' . htmlspecialchars($project['title'], ENT_QUOTES, 'UTF-8') . '">';
             echo '    </div>';
             echo '    <div class="project_detail">';
-            echo '        <h2 class="project_title" data-aos="fade-up"><a href="/portfolio/pages/php/project-details.php?project=' . rawurlencode($project['slug']) . '">' . htmlspecialchars($project['title'], ENT_QUOTES, 'UTF-8') . '</a></h2>';
+            echo '        <h2 class="project_title" data-aos="fade-up"><a href="/pages/php/project-details.php?project=' . rawurlencode($project['slug']) . '">' . htmlspecialchars($project['title'], ENT_QUOTES, 'UTF-8') . '</a></h2>';
             echo '        <p class="project_description" data-aos="fade-up" data-aos-delay="0">' . $project['short_description'] . '</p>';
             echo '    </div>';
             echo '</div>';

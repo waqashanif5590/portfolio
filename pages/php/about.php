@@ -10,7 +10,7 @@
 
         <div class="details">
             <div data-aos="zoom-in" class="image_container">
-                <img src="/portfolio/assets/images/profile.jpeg" alt="">
+                <img src="/assets/images/profile.jpeg" alt="">
             </div>
 
             <div class="details_container">

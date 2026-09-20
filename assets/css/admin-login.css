@@ -43,7 +43,7 @@ body {
     color: var(--white);
     background:
         linear-gradient(145deg, rgba(10, 42, 53, 0.97), rgba(22, 121, 110, 0.93)),
-        url('/portfolio/assets/images/dark-waves.jpg') center / cover;
+        url('/assets/images/dark-waves.jpg') center / cover;
     isolation: isolate;
 }
 

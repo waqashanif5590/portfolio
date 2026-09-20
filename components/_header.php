@@ -1,5 +1,5 @@
 <!-- Header section -->
-<?php $baseUrl = $baseUrl ?? '/portfolio'; ?>
+<?php $baseUrl = $baseUrl ?? ''; ?>
 <section id="navbar" class="blink">
     <div class="web_name">
         <a href="<?= $baseUrl ?>/index.php">WAQAS HANIF</a>

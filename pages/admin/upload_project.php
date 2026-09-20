@@ -2,7 +2,7 @@
 include __DIR__ . '/../../config/database.php';
 session_start();
 if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] == false) {
-    header("Location: /portfolio/pages/admin/login.php");
+    header("Location: /pages/admin/login.php");
     exit();
 }
 ?>
@@ -91,7 +91,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     // Show alert message
-    echo "<script>alert('Project added successfully!'); window.location.href = '/portfolio/pages/admin/upload_project.php';</script>";
+    echo "<script>alert('Project added successfully!'); window.location.href = '/pages/admin/upload_project.php';</script>";
 }
 ?>
 <!DOCTYPE html>
@@ -109,11 +109,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <link
         rel="stylesheet"
-        href="/portfolio/assets/css/admin-dashboard.css">
+        href="/assets/css/admin-dashboard.css">
 
     <link
         rel="stylesheet"
-        href="/portfolio/assets/css/admin-project-create.css">
+        href="/assets/css/admin-project-create.css">
 
 </head>
 
@@ -146,7 +146,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                     <a
                         class="back-link"
-                        href="/portfolio/pages/admin/index.php">
+                        href="/pages/admin/index.php">
                         <span>←</span>
                         Back to dashboard
                     </a>
@@ -718,7 +718,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                     <a
                         class="cancel-button"
-                        href="/portfolio/admin/dashboard.html">
+                        href="/admin/dashboard.html">
                         Cancel
                     </a>
 

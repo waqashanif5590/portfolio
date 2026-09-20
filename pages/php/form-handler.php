@@ -9,6 +9,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $stmt = $pdo->prepare("INSERT INTO contact_messages (name, email, subject, message) VALUES (?, ?, ?, ?)");
     $stmt->execute([$name, $email, $subject, $message]);
     if ($stmt) {
-        header('Location: /portfolio/pages/php/contact.php');
+        header('Location: /pages/php/contact.php');
     }
 }

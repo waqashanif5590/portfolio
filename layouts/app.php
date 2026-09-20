@@ -2,7 +2,7 @@
 <?php
 $title = $title ?? 'My Portfolio';
 $content = $content ?? '';
-$baseUrl = $baseUrl ?? '/portfolio';
+$baseUrl = $baseUrl ?? '';
 $styles = $styles ?? ['portfolio.css', 'portfolioMobile.css'];
 ?>
 
@@ -18,7 +18,7 @@ include __DIR__ . '/../config/database.php';
     <title><?= htmlspecialchars($title) ?></title>
     <link rel="stylesheet" href="<?= $baseUrl ?>/assets/css/style.css">
     <?php foreach ($styles as $style): ?>
-        <link rel="stylesheet"<?= preg_match('/mobile\.css$/i', $style) ? ' media="screen and (max-width: 1008px)"' : '' ?> href="<?= $baseUrl ?>/assets/css/<?= htmlspecialchars($style) ?>">
+        <link rel="stylesheet" <?= preg_match('/mobile\.css$/i', $style) ? ' media="screen and (max-width: 1008px)"' : '' ?> href="<?= $baseUrl ?>/assets/css/<?= htmlspecialchars($style) ?>">
     <?php endforeach; ?>
     <link rel="stylesheet" href="<?= $baseUrl ?>/assets/css/professional.css">
     <script src="https://kit.fontawesome.com/1359e2cfd9.js" crossorigin="anonymous"></script>
