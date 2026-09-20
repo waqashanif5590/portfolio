@@ -1,4 +1,5 @@
     <?php
+    require_once __DIR__ . '/../../config/database.php';
     $title = 'About Me';
     $styles = ['about.css', 'aboutMobile.css'];
     ob_start();
@@ -10,7 +11,7 @@
 
         <div class="details">
             <div data-aos="zoom-in" class="image_container">
-                <img src="/assets/images/profile.jpeg" alt="">
+                <img src="<?= $baseUrl ?>/assets/images/profile.jpeg" alt="">
             </div>
 
             <div class="details_container">

@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . '/../../config/database.php';
+$baseUrl = $baseUrl ?? '';
 
 $slug = trim($_GET['project'] ?? '');
 $project = null;
@@ -81,7 +82,7 @@ ob_start();
 
 	<?php if ($primary_image): ?>
 		<figure class="project-hero-image">
-			<img src="/uploads/images/<?= $e($primary_image['image']) ?>" alt="<?= $e($primary_image['alt_text'] ?: $project['title']) ?>">
+			<img src="<?= $baseUrl ?>/uploads/images/<?= $e($primary_image['image']) ?>" alt="<?= $e($primary_image['alt_text'] ?: $project['title']) ?>">
 			<?php if (!empty($primary_image['caption'])): ?><figcaption><?= $e($primary_image['caption']) ?></figcaption><?php endif; ?>
 		</figure>
 	<?php endif; ?>
@@ -132,7 +133,7 @@ ob_start();
 			<div class="project-gallery">
 				<?php foreach (array_slice($images, 1) as $image): ?>
 					<figure>
-						<img src="/uploads/images/<?= $e($image['image']) ?>" alt="<?= $e($image['alt_text'] ?: $project['title']) ?>">
+						<img src="<?= $baseUrl ?>/uploads/images/<?= $e($image['image']) ?>" alt="<?= $e($image['alt_text'] ?: $project['title']) ?>">
 						<?php if (!empty($image['caption'])): ?><figcaption><?= $e($image['caption']) ?></figcaption><?php endif; ?>
 					</figure>
 				<?php endforeach; ?>

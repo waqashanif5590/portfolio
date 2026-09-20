@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS admins (
     status boolean NOT NULL DEFAULT 1,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-)
+);
 
 -- =========================================================
 -- 1. Projects

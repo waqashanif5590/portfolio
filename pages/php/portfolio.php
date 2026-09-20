@@ -22,8 +22,8 @@ ob_start();
         $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
         foreach ($projects as $project) {
             $image_url = $project['primary_image']
-                ? '/uploads/images/' . htmlspecialchars($project['primary_image'], ENT_QUOTES, 'UTF-8')
-                : '/assets/images/business.jpg';
+                ? $baseUrl . '/uploads/images/' . htmlspecialchars($project['primary_image'], ENT_QUOTES, 'UTF-8')
+                : $baseUrl . '/assets/images/business.jpg';
             echo '<div class="project">';
             echo '    <div data-aos="fade-up" class="project_image">';
             echo '        <img src="' . $image_url . '" alt="' . htmlspecialchars($project['title'], ENT_QUOTES, 'UTF-8') . '">';

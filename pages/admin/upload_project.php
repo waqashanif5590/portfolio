@@ -109,11 +109,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <link
         rel="stylesheet"
-        href="/assets/css/admin-dashboard.css">
+        href="<?= $baseUrl ?>/assets/css/admin-dashboard.css">
 
     <link
         rel="stylesheet"
-        href="/assets/css/admin-project-create.css">
+        href="<?= $baseUrl ?>/assets/css/admin-project-create.css">
 
 </head>
 
@@ -718,7 +718,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                     <a
                         class="cancel-button"
-                        href="/admin/dashboard.html">
+                        href="<?= $baseUrl ?>/pages/admin/index.php">
                         Cancel
                     </a>
 

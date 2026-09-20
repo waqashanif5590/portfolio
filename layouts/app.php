@@ -2,7 +2,16 @@
 <?php
 $title = $title ?? 'My Portfolio';
 $content = $content ?? '';
-$baseUrl = $baseUrl ?? '';
+$baseUrl = $baseUrl ?? null;
+if ($baseUrl === null) {
+    $documentRoot = realpath($_SERVER['DOCUMENT_ROOT'] ?? '');
+    $projectRoot = realpath(__DIR__ . '/..');
+    $baseUrl = '';
+
+    if ($documentRoot && $projectRoot && str_starts_with($projectRoot, $documentRoot)) {
+        $baseUrl = str_replace('\\', '/', substr($projectRoot, strlen($documentRoot)));
+    }
+}
 $styles = $styles ?? ['portfolio.css', 'portfolioMobile.css'];
 ?>
 

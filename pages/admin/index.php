@@ -15,7 +15,7 @@ if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] == fals
 
     <title>Admin Dashboard | WikiBhai Portfolio</title>
 
-    <link rel="stylesheet" href="/assets/css/admin-dashboard.css">
+    <link rel="stylesheet" href="<?= $baseUrl ?>/assets/css/admin-dashboard.css">
 </head>
 
 <body>

@@ -1,5 +1,15 @@
 <?php
 $projectRoot = dirname(__DIR__);
+
+if (!isset($baseUrl)) {
+    $documentRoot = realpath($_SERVER['DOCUMENT_ROOT'] ?? '');
+    $baseUrl = '';
+
+    if ($documentRoot && str_starts_with($projectRoot, $documentRoot)) {
+        $baseUrl = str_replace('\\', '/', substr($projectRoot, strlen($documentRoot)));
+    }
+}
+
 require_once $projectRoot . '/vendor/autoload.php';
 
 Dotenv\Dotenv::createImmutable($projectRoot)->safeLoad();

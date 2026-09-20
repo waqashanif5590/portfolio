@@ -24,6 +24,6 @@ if ($slug !== '') {
         }
     }
 
-    header('Location: /admin/index.php');
+    header('Location: /pages/admin/index.php');
     exit;
 }
