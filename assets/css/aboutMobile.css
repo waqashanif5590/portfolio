@@ -89,10 +89,16 @@ p strong {
     flex-direction: column;
     width: 100%;
     margin: 15px 0px;
+    gap: 10px;
 }
 .skills_same_part {
     width: 100%;
-    margin: 0px 20px;
+    margin: 0;
+}
+
+.skills_same_part .progress {
+    width: 100%;
+    margin: 30px 0;
 }
 
 #facts_section {

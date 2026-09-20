@@ -553,7 +553,7 @@ textarea:focus-visible {
     }
 
     #landing_section {
-        min-height: calc(100vh - 4rem);
+        min-height: 0;
     }
 
     #about_section,

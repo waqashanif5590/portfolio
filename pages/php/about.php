@@ -6,7 +6,7 @@
     ?>
     <section id="about_section">
         <h1 data-aos="fade-up">About Me</h1>
-        <p data-aos="fade-up" data-aos-delay="500">I'm Muhammad Waqas Hanif, a professional Full Stack Developer from
+        <p data-aos="fade-up" data-aos-delay="500">I'm Muhammad Waqas Hanif, a PHP, Laravel Full Stack Developer from
             Pakistan.</p>
 
         <div class="details">
@@ -16,10 +16,8 @@
 
             <div class="details_container">
                 <h1 data-aos="fade-up">PHP and Laravel Full Stack Developer</h1>
-                <p data-aos="fade-down" data-aos-delay="500">I specialize in creating user-friendly and visually
-                    appealing interfaces for mobiles and web
-                    applications while also being proficient
-                    in backend development.</p>
+                <p data-aos="fade-down" data-aos-delay="500">I am a PHP, Laravel developer passionate about building practical and user-friendly web applications. I enjoy turning ideas into functional projects while learning new technologies and improving my problem-solving skills. I am focused on growing as a developer through hands-on experience and real-world projects.
+                </p>
                 <div class="personal_details">
                     <div class="part_1 details_same">
                         <p data-aos="fade-up" data-aos-delay="0"><strong>Name:</strong> Muhammad Waqas Hanif</p>
@@ -46,9 +44,8 @@
     <!-- Skills section -->
     <section id="skills_section">
         <h1 data-aos="fade-up">Skills</h1>
-        <p data-aos="fade-up" data-aos-delay="300">I specialize in building modern, full-stack web applications using
-            technologies like HTML, CSS, JavaScript, jQuery, PHP, Laravel, Mysql. From creating responsive user interfaces to developing powerful back-end APIs,
-            I enjoy crafting efficient and scalable solutions that solve real-world problems.</p>
+        <p data-aos="fade-up" data-aos-delay="300">I build responsive and user-friendly web applications using PHP, Laravel, Livewire, MySQL, JavaScript, HTML, CSS, and Tailwind CSS. I have experience with MVC architecture, CRUD operations, authentication, database relationships, REST APIs, and real-time features. I focus on writing clean, practical code and continuously improving my development skills through hands-on projects.
+        </p>
 
         <div class="skills_container">
             <div class="skills_part1 skills_same_part">

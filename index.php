@@ -1,6 +1,18 @@
 <?php
 $title = 'Home';
-$styles = ['about.css', 'resume.css', 'contact.css', 'services.css', 'portfolio.css', 'styleMobile.css'];
+$styles = [
+    'about.css',
+    'aboutMobile.css',
+    'resume.css',
+    'resumeMobile.css',
+    'contact.css',
+    'contactMobile.css',
+    'services.css',
+    'serviceMobile.css',
+    'portfolio.css',
+    'portfolioMobile.css',
+    'styleMobile.css',
+];
 ob_start();
 
 require_once __DIR__ . '/config/database.php';
@@ -10,11 +22,11 @@ require_once __DIR__ . '/config/database.php';
 <section id="landing_section">
     <div class="landing_content">
         <h1 data-aos="fade-up">Welcome to my Portfolio</h1>
-        <p data-aos="fade-up" data-aos-delay="0">I'm Muhammad Waqas Hanif and I'm a professional Full Stack
+        <p data-aos="fade-up" data-aos-delay="0">I'm Muhammad Waqas Hanif and I'm a PHP, Laravel Full Stack
             Developer from Pakistan.</p>
         <div class="learn-more">
             <p data-aos="fade-up" data-aos-delay="0">Click to Learn more</p>
-            <a data-aos="fade-down" data-aos-delay="0" href="/pages/php/about.php">About Me</a>
+            <a data-aos="fade-down" data-aos-delay="0" href="<?= $baseUrl ?>/pages/php/about.php">About Me</a>
         </div>
 
     </div>
@@ -24,7 +36,7 @@ require_once __DIR__ . '/config/database.php';
 <!-- about section -->
 <section id="about_section">
     <h1 data-aos="fade-up">About Me</h1>
-    <p data-aos="fade-up" data-aos-delay="0">I'm Muhammad Waqas Hanif, a professional Full Stack Developer from
+    <p data-aos="fade-up" data-aos-delay="0">I'm Muhammad Waqas Hanif, a Full Stack Developer from
         Pakistan.</p>
 
     <div class="details">
@@ -34,10 +46,9 @@ require_once __DIR__ . '/config/database.php';
 
         <div class="details_container">
             <h1 data-aos="fade-up">PHP and Laravel Full Stack Developer</h1>
-            <p data-aos="fade-down" data-aos-delay="0">I specialize in creating user-friendly and visually
-                appealing interfaces for mobiles and web
-                applications while also being proficient
-                in backend development.</p>
+            <p data-aos="fade-down" data-aos-delay="0">I am a PHP, Laravel developer passionate about building practical and user-friendly web applications. I enjoy turning ideas into functional projects while learning new technologies and improving my problem-solving skills. I am focused on growing as a developer through hands-on experience and real-world projects.
+
+            </p>
             <div class="personal_details">
                 <div class="part_1 details_same">
                     <p data-aos="fade-up" data-aos-delay="0"><strong>Name:</strong> Muhammad Waqas Hanif</p>
@@ -64,10 +75,8 @@ require_once __DIR__ . '/config/database.php';
 <!-- Skills section -->
 <section id="skills_section">
     <h1 data-aos="fade-up">Skills</h1>
-    <p data-aos="fade-up" data-aos-delay="0">I specialize in building modern, full-stack web applications using
-        technologies like HTML, CSS, JavaScript,
-        React, Node.js, and MongoDB. From creating responsive user interfaces to developing powerful back-end APIs,
-        I enjoy crafting efficient and scalable solutions that solve real-world problems.</p>
+    <p data-aos="fade-up" data-aos-delay="0">I build responsive and user-friendly web applications using PHP, Laravel, Livewire, MySQL, JavaScript, HTML, CSS, and Tailwind CSS. I have experience with MVC architecture, CRUD operations, authentication, database relationships, REST APIs, and real-time features. I focus on writing clean, practical code and continuously improving my development skills through hands-on projects.
+    </p>
 
     <div class="skills_container">
         <div class="skills_part1 skills_same_part">
@@ -149,7 +158,7 @@ require_once __DIR__ . '/config/database.php';
         <div class="service">
             <img data-aos="zoom-in" src="<?= $baseUrl ?>/assets/images/business.jpg" alt="Web Development">
             <h1 data-aos="fade-up" class="child">Business Websites</h1>
-            <p data-aos="fade-up" data-aos-delay="0" class="child">Professional websites for businesses to showcase their products and services.</p>
+            <p data-aos="fade-up" data-aos-delay="0" class="child">Websites for businesses to showcase their products and services.</p>
         </div>
         <div class="service">
             <img data-aos="zoom-in" src="<?= $baseUrl ?>/assets/images/gym.jpg" alt="Web Development">
@@ -164,7 +173,7 @@ require_once __DIR__ . '/config/database.php';
         <div class="service">
             <img data-aos="zoom-in" src="<?= $baseUrl ?>/assets/images/portfolio_temple.jpg" alt="Web Development">
             <h1 data-aos="fade-up" class="child">Portfolio Websites</h1>
-            <p data-aos="fade-up" data-aos-delay="0" class="child">Showcase your work and skills with a professional portfolio website.</p>
+            <p data-aos="fade-up" data-aos-delay="0" class="child">Showcase your work and skills with a portfolio website.</p>
         </div>
         <div class="service">
             <img data-aos="zoom-in" src="<?= $baseUrl ?>/assets/images/ecommerce.jpg" alt="Web Development">
@@ -262,7 +271,7 @@ require_once __DIR__ . '/config/database.php';
 
     <!-- Skills section -->
     <div id="technical_skills_section" class="language-skill-same-class">
-        <h2 data-aos="fade-up" class="heading">Professional Skills</h2>
+        <h2 data-aos="fade-up" class="heading">Skills</h2>
         <div class="skills_container language-skill-same-container" data-aos="fade-up" data-aos-delay="0">
             <h1>
                 <div class="bullet"></div> Entrepreneurial Mindset

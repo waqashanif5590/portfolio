@@ -21,7 +21,7 @@ ob_start();
             <div class="service">
                 <img data-aos="zoom-in" src="<?= $baseUrl ?>/assets/images/business.jpg" alt="Web Development">
                 <h1 data-aos="fade-up" class="child">Business Websites</h1>
-                <p data-aos="fade-up" data-aos-delay="300" class="child">Professional websites for businesses to showcase their products and services.</p>
+                <p data-aos="fade-up" data-aos-delay="300" class="child">Websites for businesses to showcase their products and services.</p>
             </div>
             <div class="service">
                 <img data-aos="zoom-in" src="<?= $baseUrl ?>/assets/images/gym.jpg" alt="Web Development">
@@ -36,7 +36,7 @@ ob_start();
             <div class="service">
                 <img data-aos="zoom-in" src="<?= $baseUrl ?>/assets/images/portfolio_temple.jpg" alt="Web Development">
                 <h1 data-aos="fade-up" class="child">Portfolio Websites</h1>
-                <p data-aos="fade-up" data-aos-delay="300" class="child">Showcase your work and skills with a professional portfolio website.</p>
+                <p data-aos="fade-up" data-aos-delay="300" class="child">Showcase your work and skills with a portfolio website.</p>
             </div>
             <div class="service">
                 <img data-aos="zoom-in" src="<?= $baseUrl ?>/assets/images/ecommerce.jpg" alt="Web Development">
