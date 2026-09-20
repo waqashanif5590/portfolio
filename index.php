@@ -392,7 +392,7 @@ require_once __DIR__ . '/config/database.php';
                 </div>
                 <div class="info">
                     <h1 data-aos="fade-up">Phone</h1>
-                    <p data-aos="fade-down">+92 300 1234567</p>
+                    <p data-aos="fade-down">+92 3485990122</p>
                 </div>
 
             </div>
@@ -402,7 +402,7 @@ require_once __DIR__ . '/config/database.php';
                 </div>
                 <div class="info">
                     <h1 data-aos="fade-up">Email</h1>
-                    <p data-aos="fade-down">example@example.com</p>
+                    <p data-aos="fade-down"><a href="mailto:waqashanif5590@gmail.com">waqashanif5590@gmail.com</a></p>
                 </div>
 
             </div>
@@ -418,7 +418,7 @@ require_once __DIR__ . '/config/database.php';
             </div>
         </div>
         <div class="contact_form">
-            <form action="" id="form">
+            <form action="<?= htmlspecialchars($baseUrl, ENT_QUOTES, 'UTF-8') ?>/pages/php/form-handler.php" method="post" id="form">
                 <div class="input_field">
                     <label for="name" data-aos="fade-up">Name:</label>
                     <input type="text" id="name" name="name" required>

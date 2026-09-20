@@ -30,7 +30,7 @@ ob_start();
             echo '    </div>';
             echo '    <div class="project_detail">';
             echo '        <h2 class="project_title" data-aos="fade-up"><a href="/pages/php/project-details.php?project=' . rawurlencode($project['slug']) . '">' . htmlspecialchars($project['title'], ENT_QUOTES, 'UTF-8') . '</a></h2>';
-            echo '        <p class="project_description" data-aos="fade-up" data-aos-delay="300">' . $project['short_description'] . '</p>';
+            echo '        <p class="project_description" data-aos="fade-up" data-aos-delay="300">' . htmlspecialchars((string) $project['short_description'], ENT_QUOTES, 'UTF-8') . '</p>';
             echo '    </div>';
             echo '</div>';
         }

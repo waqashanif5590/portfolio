@@ -1,5 +1,6 @@
 <?php
 include __DIR__ . '/../../config/database.php';
+require_once __DIR__ . '/../../config/upload.php';
 session_start();
 if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] == false) {
     header("Location: /pages/admin/login.php");
@@ -51,22 +52,34 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Handle images
     $images = [];
-    if (isset($_FILES['images'])) {
+    if (isset($_FILES['images']['name']) && is_array($_FILES['images']['name'])) {
         foreach ($_FILES['images']['name'] as $index => $name) {
-            if (!empty($name)) {
-                $tmp_name = $_FILES['images']['tmp_name'][$index];
-                $alt_text = $_POST['image_alt_text'][$index + 1] ?? '';
-                $caption = $_POST['image_caption'][$index + 1] ?? '';
-                $is_primary = (int) ($_POST['primary_image'] ?? 0) === $index + 1 ? 1 : 0;
-                // Move the uploaded file to the desired directory
-                move_uploaded_file($tmp_name, __DIR__ . '/../../uploads/images/' . basename($name));
-                $images[] = [
-                    'filename' => basename($name),
-                    'alt_text' => $alt_text,
-                    'caption' => $caption,
-                    'is_primary' => $is_primary
-                ];
+            if ($name === '') {
+                continue;
             }
+
+            $file = [
+                'name' => $_FILES['images']['name'][$index],
+                'type' => $_FILES['images']['type'][$index] ?? '',
+                'tmp_name' => $_FILES['images']['tmp_name'][$index] ?? '',
+                'error' => $_FILES['images']['error'][$index] ?? UPLOAD_ERR_NO_FILE,
+                'size' => $_FILES['images']['size'][$index] ?? 0,
+            ];
+
+            $storedFilename = secure_store_project_image($file);
+            if ($storedFilename === null) {
+                continue;
+            }
+
+            $alt_text = $_POST['image_alt_text'][$index + 1] ?? '';
+            $caption = $_POST['image_caption'][$index + 1] ?? '';
+            $is_primary = (int) ($_POST['primary_image'] ?? 0) === $index + 1 ? 1 : 0;
+            $images[] = [
+                'filename' => $storedFilename,
+                'alt_text' => $alt_text,
+                'caption' => $caption,
+                'is_primary' => $is_primary,
+            ];
         }
     }
 

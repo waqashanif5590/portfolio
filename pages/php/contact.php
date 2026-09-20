@@ -43,7 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </div>
                 <div class="info">
                     <h1 data-aos="fade-up">Phone</h1>
-                    <p data-aos="fade-down">+92 300 1234567</p>
+                    <p data-aos="fade-down">+92 3485990122</p>
                 </div>
 
             </div>
@@ -53,7 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </div>
                 <div class="info">
                     <h1 data-aos="fade-up">Email</h1>
-                    <p data-aos="fade-down">example@example.com</p>
+                    <p data-aos="fade-down"><a href="mailto:waqashanif5590@gmail.com">waqashanif5590@gmail.com</a></p>
                 </div>
 
             </div>

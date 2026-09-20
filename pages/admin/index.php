@@ -277,11 +277,19 @@ if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] == fals
                                             Edit
                                         </a>
 
-                                        <a
-                                            class="action-link delete"
-                                            href="delete_project.php?project=' . $project['slug'] . '">
-                                            Delete
-                                        </a>
+                                        <form
+                                            method="post"
+                                            action="delete_project.php"
+                                            class="delete-project-form"
+                                            onsubmit="return confirm(\'Delete this project?\');">
+                                            <input
+                                                type="hidden"
+                                                name="project"
+                                                value="' . htmlspecialchars($project['slug'], ENT_QUOTES, 'UTF-8') . '">
+                                            <button type="submit" class="action-link delete">
+                                                Delete
+                                            </button>
+                                        </form>
 
                                     </div>
 

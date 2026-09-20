@@ -53,7 +53,6 @@ include __DIR__ . '/../config/database.php';
     <?php require __DIR__ . '/../components/_footer.php'; ?>
 
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-    <script src="<?= $baseUrl ?>/assets/js/portfolio.js"></script>
     <script src="<?= $baseUrl ?>/assets/js/toggleNavbarStyle.js"></script>
     <script src="<?= $baseUrl ?>/assets/js/toggletheme.js"></script>
 </body>
