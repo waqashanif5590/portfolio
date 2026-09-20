@@ -46,9 +46,6 @@
 
         <main class="login-shell">
             <section class="login-intro" aria-label="Portfolio administration">
-                <a class="brand-mark" href="/portfolio/" aria-label="Return to portfolio home">
-                    <img src="/portfolio/assets/images/profile.jpeg" alt="WikiBhai">
-                </a>
 
                 <div class="intro-copy">
                     <p class="eyebrow">Private workspace</p>
@@ -56,7 +53,7 @@
                     <p>Manage your portfolio content from one calm, focused space.</p>
                 </div>
 
-                <p class="intro-footer">WikiBhai Portfolio · Administration</p>
+                <p class="intro-footer">WaqasHanif Portfolio · Administration</p>
             </section>
 
             <section class="login-panel" aria-labelledby="login-heading">
